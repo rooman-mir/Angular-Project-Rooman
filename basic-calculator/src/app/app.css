@@ -1,0 +1,81 @@
+.calculator {
+  max-width: 320px;
+  margin: 50px auto;
+  background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  font-family: 'Amazon Ember', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.calculator h2 {
+  color: #2c3e50 !important;
+  font-weight: 600;
+  font-size: 2.6rem;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.calculator input {
+  font-size: 1.8rem;
+  font-weight: 500;
+  height: 60px;
+  background: #ffffff;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  text-align: right;
+  padding: 0 15px;
+  width: 100%;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  color: #2c3e50;
+}
+
+.calculator .table {
+  margin-bottom: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.calculator .table td {
+  border: none;
+  padding: 4px;
+  width: 25%;
+}
+
+.calculator button {
+  width: 100%;
+  height: 55px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.calculator button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.calculator .btn-secondary {
+  background: linear-gradient(145deg, #34495e, #2c3e50);
+  color: white;
+}
+
+.calculator .btn-warning {
+  background: linear-gradient(145deg, #3498db, #2980b9);
+  color: white;
+}
+
+.calculator .btn-danger {
+  background: linear-gradient(145deg, #e74c3c, #c0392b);
+  color: white;
+}
+
+.calculator .btn-success {
+  background: linear-gradient(145deg, #27ae60, #229954);
+  color: white;
+}
