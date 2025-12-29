@@ -151,6 +151,66 @@ export class AppComponent {
     }
   }
 }
+
+### 3.app.html
+```<div class="container mt-5">
+  <div class="calculator card shadow p-4">
+
+    <h2 class="text-center text-primary mb-3">
+      {{ title }}
+    </h2>
+
+    <form>
+      <input
+        type="text"
+        class="form-control text-end mb-3"
+        [(ngModel)]="displayValue"
+        readonly
+      />
+
+      <table class="table table-bordered text-center">
+        <tr *ngFor="let row of [['7','8','9','/'],['4','5','6','*'],['1','2','3','-'],['0','C','=','+']]">
+          <td *ngFor="let btn of row">
+            <button
+              type="button"
+              class="btn w-100"
+              [ngClass]="{
+                'btn-secondary': btn >= '0' && btn <= '9',
+                'btn-warning': btn === '+' || btn === '-' || btn === '*' || btn === '/',
+                'btn-danger': btn === 'C',
+                'btn-success': btn === '='
+              }"
+              (click)="
+                btn === 'C' ? clear() :
+                btn === '=' ? calculate() :
+                appendValue(btn)
+              ">
+              {{ btn }}
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+  </div>
+</div>
+```
+### 4.app.css
+```.calculator {
+  max-width: 350px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+input {
+  font-size: 22px;
+  height: 50px;
+}
+
+button {
+  font-size: 18px;
+  font-weight: bold;
+}
 ```
 
 ## Implementation Details
