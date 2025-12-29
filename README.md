@@ -153,7 +153,7 @@ export class AppComponent {
 }
 ```
 ### 3.app.html
-```
+```typescript
 <div class="container mt-5">
   <div class="calculator card shadow p-4">
 
@@ -197,7 +197,7 @@ export class AppComponent {
 </div>
 ```
 ### 4.app.css
-```
+```typescript
 .calculator {
   max-width: 350px;
   margin: auto;
