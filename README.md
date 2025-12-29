@@ -153,7 +153,8 @@ export class AppComponent {
 }
 ```
 ### 3.app.html
-```<div class="container mt-5">
+```
+<div class="container mt-5">
   <div class="calculator card shadow p-4">
 
     <h2 class="text-center text-primary mb-3">
@@ -196,7 +197,8 @@ export class AppComponent {
 </div>
 ```
 ### 4.app.css
-```.calculator {
+```
+.calculator {
   max-width: 350px;
   margin: auto;
   border-radius: 10px;
