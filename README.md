@@ -151,7 +151,7 @@ export class AppComponent {
     }
   }
 }
-
+```
 ### 3.app.html
 ```<div class="container mt-5">
   <div class="calculator card shadow p-4">
